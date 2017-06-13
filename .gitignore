@@ -1,22 +1,9 @@
-# eclipse
-bin
-*.launch
-.settings
-.metadata
-.classpath
-.project
+$ cat .gitignore
 
-# idea
-out
-*.ipr
-*.iws
-*.iml
-.idea
-
-# gradle
-build
-.gradle
-
-# other
-eclipse
-run
+/*
+!/src
+!build.gradle
+!/gradle
+!gradlew
+!gradlew.bat
+!.gitignore
