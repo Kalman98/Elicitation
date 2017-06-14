@@ -1,6 +1,6 @@
 # Elicitation
 
-> "Elicit: to draw or bring out or forth; educe; evoke." - The Dictionary
+> "Elicitation: the act of drawing or bringing out or forth; educing; evoking." - The Dictionary
 
 
 
