@@ -18,3 +18,6 @@ If you want to install the latest version of the mod, you can compile it from so
 
 
 For more information on development/compilation, please visit the [Getting Started with ForgeGradle](http://www.minecraftforge.net/forum/topic/13860-tutorial-getting-started-with-forgegradle/) guide.
+
+
+You can also check out the official Elicitation Discord server here: https://discord.gg/t3SnPqZ
