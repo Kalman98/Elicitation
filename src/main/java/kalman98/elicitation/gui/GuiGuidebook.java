@@ -34,8 +34,8 @@ public class GuiGuidebook extends GuiScreen
         int i = (width - 256) / 2;
         int j = (height - 192) / 2;
         this.drawTexturedModalRect(i, j, 0, 0, 256, 192);
-        this.itemRender.renderItemIntoGUI(new ItemStack(Items.WRITABLE_BOOK), (width / 2) - 8, (height / 2) - 20);
-        String text = "test tset";
-        this.fontRendererObj.drawString(text, (width / 2) - ((text.length() * 5) / 2), (height / 2) - 30, TextFormatting.GRAY.getColorIndex());
+        this.itemRender.renderItemIntoGUI(new ItemStack(Items.WRITABLE_BOOK), (width / 2) - 100, (height / 2) - 85);
+        //String text = "test tset";
+        //this.fontRendererObj.drawString(text, (width / 2) - ((text.length() * 5) / 2), (height / 2) - 30, TextFormatting.GRAY.getColorIndex());
 	}
 }
