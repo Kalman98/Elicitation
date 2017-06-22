@@ -8,17 +8,16 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.text.TextFormatting;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 @SideOnly(Side.CLIENT)
-public class GuiGuidebook extends GuiScreen
+public class GuiGuidebookPages extends GuiScreen
 {
 	public static final ResourceLocation GUIDEBOOK_GUI_TEXTURE = new ResourceLocation("elicitation:textures/gui/guidebook_gui.png"); 
 	public static final int LETTER_WIDTH = 5;
 	
-	public GuiGuidebook(EntityPlayer player)
+	public GuiGuidebookPages(EntityPlayer player)
 	{ }
 
 	@Override
