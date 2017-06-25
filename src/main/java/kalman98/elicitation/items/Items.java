@@ -48,7 +48,8 @@ public class Items
 		registerItemRendering("guidebook");
 	}
 	
-	/**Registers a new ItemModel.
+	/**
+	 * Registers a new ItemModel.
 	 * 
 	 * Will only work if the itemModel json
 	 * file has the same name as the registered

@@ -19,7 +19,7 @@ public class Elicitation
 	@Mod.Instance(Elicitation.MODID)
 	public static Elicitation instance;
 	
-    //------------- Initialization -------------\\ 
+    //------------- Initialization -------------\\
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {

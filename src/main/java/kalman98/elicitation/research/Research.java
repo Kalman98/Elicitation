@@ -9,7 +9,7 @@ public class Research {
 	
 	public ArrayList<ResearchPage> info = new ArrayList<ResearchPage>();
 	public ArrayList<Research> parents = new ArrayList<Research>();
-	public String name = "";
+	public String name = "", group = "";
 	public ItemStack icon = null;
 	
 	public Research(String name, ItemStack icon)
@@ -64,8 +64,7 @@ public class Research {
 			{
 				// dump words into the list as a string, *without* the current word
 				list.add(temp);
-				System.out.println(list.size());
-				if (list.size() > 14) {
+				if (list.size() > 13) {
 					this.info.add(new ResearchPage().setInfo(list));
 					list = new ArrayList<String>();
 				}
@@ -85,10 +84,9 @@ public class Research {
 		this.info.add(new ResearchPage().setInfo(list));
 		return this;
 	}
-	
-	public Research addCraftingRecipe(Object[] recipe, ItemStack result)
-	{
-		info.add(new ResearchPage().setCraftingRecipe(recipe, result));
+	public Research addCraftingRecipe(ItemStack stack1, ItemStack stack2, ItemStack stack3, ItemStack stack4, ItemStack stack5, ItemStack stack6, ItemStack stack7, ItemStack stack8, ItemStack stack9, ItemStack result){
+
+		info.add(new ResearchPage().setCraftingRecipe(stack1, stack2, stack3, stack4, stack5, stack6, stack7, stack8, stack9, result));
 		return this;
 	}
 	
@@ -100,5 +98,11 @@ public class Research {
 	public int getPageCount()
 	{
 		return info.size();
+	}
+	
+	public Research setGroup(String group)
+	{
+		this.group = group;
+		return this;
 	}
 }

@@ -37,14 +37,19 @@ public class ResearchPage
 	 * @param output
 	 * @return
 	 */
-	public ResearchPage setCraftingRecipe(Object[] recipe, ItemStack output)
+	public ResearchPage setCraftingRecipe(ItemStack stack1, ItemStack stack2, ItemStack stack3, ItemStack stack4, ItemStack stack5, ItemStack stack6, ItemStack stack7, ItemStack stack8, ItemStack stack9, ItemStack result)
 	{
 		type = EnumPageType.TYPE_CRAFTING;
-		for (int i = 0; i < 9; i++)
-		{
-			craftingRecipe.add((ItemStack) recipe[i]);
-		}
-		craftingRecipe.add(output);
+		craftingRecipe.add(stack1);
+		craftingRecipe.add(stack2);
+		craftingRecipe.add(stack3);
+		craftingRecipe.add(stack4);
+		craftingRecipe.add(stack5);
+		craftingRecipe.add(stack6);
+		craftingRecipe.add(stack7);
+		craftingRecipe.add(stack8);
+		craftingRecipe.add(stack9);
+		craftingRecipe.add(result);
 		return this;
 	}
 	
@@ -55,7 +60,7 @@ public class ResearchPage
 	 * @param output
 	 * @return
 	 */
-	public ResearchPage addSmeltingRecipe(ItemStack input, ItemStack output)
+	public ResearchPage setSmeltingRecipe(ItemStack input, ItemStack output)
 	{
 		type = EnumPageType.TYPE_SMELTING;
 		smeltingRecipe.add(input);

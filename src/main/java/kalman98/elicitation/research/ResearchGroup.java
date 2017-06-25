@@ -14,9 +14,28 @@ public class ResearchGroup
 		this.properName = properName;
 	}
 	
+	/**
+	 * Adds the given research to the group.
+	 * @param research
+	 * @return
+	 */
 	public ResearchGroup addResearch(Research research)
 	{
+		research.setGroup(this.name);
 		researches.add(research);
 		return this;
+	}
+	
+	/**
+	 * Gets the requested research by name, returns null if not found.
+	 * @param name
+	 * @return
+	 */
+	public Research getResearch(String name)
+	{
+		for (int i = 0; i < researches.size(); i ++)
+			if (researches.get(i).name == name)
+				return researches.get(i);
+		return null;
 	}
 }
